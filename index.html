@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>learning_content</title>
+    <link rel="stylesheet" type="text/css" href="js/style.css">
+    </head>
+    <body>
+      <h3 class="heading">       </h3>      
+
+
+<nav>
+  <ul>
+      <li> <button onClick="javascript:window.open('./lesson1/index.html', '_self');">one </button></li>
+       <li> <button onClick="javascript:window.open('./lesson2/index.html', '_self');">two </button></li>
+       <li> <button onClick="javascript:window.open('./lesson3/index.html', '_self');">three </button></li>
+       <li> <button onClick="javascript:window.open('./lesson4/index.html', '_self');">four </button></li>
+       <li> <button onClick="javascript:window.open('./lesson5/index.html', '_self');">five </button></li>
+       <li> <button onClick="javascript:window.open('./lesson6/index.html', '_self');">six </button></li>
+       <li> <button onClick="javascript:window.open('./lesson7/index.html', '_self');">seven </button></li>
+       <li> <button onClick="javascript:window.open('./lesson8/index.html', '_self');">eight</button></li>
+       <li> <button onClick="javascript:window.open('./lesson9/index.html', '_self');">nine</button></li>
+       <li> <button onClick="javascript:window.open('./lesson10/index.html', '_self');">ten</button></li>
+    </li>
+    </ul>
+    <div class="icon"></div>
+</nav>
+
+
+
+<script>
+      let listVideo = document.querySelectorAll('.video-list .vid'); 
+      let mainVideo = document.querySelector('.main-video video');
+      let title = document.querySelector('.main-video .title');
+     // let btn = document.querySelector('.main-video .btn');
+
+      listVideo.forEach(video =>{
+      video.onclick = () =>{
+      listVideo.forEach(vid => vid.classList.remove('active')); 
+      video.classList.add('active');
+      if(video.classList.contains('active')){
+      let src = video.children[0].getAttribute('src'); 
+      if(src.charAt(0)=="v")
+      {
+        mainVideo.src = src;
+        mainVideo.controls = true;
+        mainVideo.autoplay=true;
+      }
+      else
+      {
+        mainVideo.src = src;
+        mainVideo.controls = false;
+
+      }
+      let text = video.children[1].innerHTML; 
+     // let inbtn = video.children[2].innerHTML; 
+      title.innerHTML = text;
+     // btn.innerHTML = inbtn;
+                                            };
+                            };
+                                });
+
+//-----------------------------------------------------------------------------------
+ const icon = document.querySelector('.icon');
+const nav = document.querySelector('nav');
+
+icon.addEventListener('click', () => {
+  icon.classList.toggle('close');
+  nav.classList.toggle('show');
+})
+//-----------------------------------------------------------------------------------
+</script>
+
+
+
+
+    </body>
+</html>
