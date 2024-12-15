@@ -12,18 +12,35 @@
   <main>
     <div id="container3D"></div>
   </main>
-  <div class="container mt-5">
-    <!-- <h1 class="text-center mb-4">Round Buttons with Video Popups</h1>-->
-        <!-- Buttons with unique positions -->
-        <button id="button1" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal1"> تنزيل<br>البرنامج</button>
-        <button id="button2" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal2">واجهة<br>التيميز</button>
-        <button id="button3" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal3">ضبط  <br>الإعدادات</button>
-        <button id="button4" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal4">أعدادات  <br>الخصوصية</button>
-        <button id="button5" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal5">أعدادات  <br>الأشعارات</button>
-        <button id="button6" class="round-button" data-bs-toggle="modal" data-bs-target="#videoModal6">أعدادات  <br>الأتصال</button>
-    </div>
+<!-- New Goals Modal -->
+    <div class="modal fade" id="goalsModal" tabindex="-1" aria-labelledby="goalsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="goalsModalLabel">الأهداف</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" dir="rtl" style="text-align: right; font-size: 1.2rem; line-height: 1.6;">
+                    <!-- Image -->
+                    <div style="text-align: center; margin-bottom: 1rem;">
+                        <img src="models/goals.png" alt="Goals Image" style="max-width: 25%; height:auto; border-radius: 10px;">
+                    </div>
 
-    <!-- Video Modals -->
+                    <!-- Arabic Text -->
+                    <p>بعد دراسة هذا المحتوى يصبح المتعلم قادراً على أن:</p>
+                    <ul>
+                        <li>يحمل ويفعل برنامج التيميز</li>
+                        <li>يتعرف على واجهة برنامج التيميز</li>
+                        <li>يضبط إعدادات برنامج التيميز</li>
+                        <li>يضبط إعدادات الخصوصية</li>
+                        <li>يضبط إعدادات الأشعارات</li>
+                        <li>يضبط إعدادات الأتصال</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Video Modals -->
     <!-- Modal 1 -->
     <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
