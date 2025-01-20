@@ -31,56 +31,56 @@ scene.add(ambientLight);
 // Add 3D buttons (spheres with opacity)
 const button0 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button0.position.set(4, 10, 0); // Position of the button in 3D space
 scene.add(button0);
 
 const button1 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button1.position.set(45, 10, -25); // Position of the button in 3D space
 scene.add(button1);
 
 const button2 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button2.position.set(45, 10, 25);
 scene.add(button2);
 
 const button3 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button3.position.set(1, 10, 45);
 scene.add(button3);
 
 const button4 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button4.position.set(-65, 10, -35);
 scene.add(button4);
 
 const button5 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button5.position.set(-60, 10, 15);
 scene.add(button5);
 
 const button6 = new THREE.Mesh(
     new THREE.SphereGeometry(2, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5, transparent: true })
+    new THREE.MeshBasicMaterial({ color: 0xff0000, opacity: 0.5, transparent: true })
 );
 button6.position.set(6, 10, -30);
 scene.add(button6);
 //*************************************************************************************/
 // Function to create text texture with word wrapping
 let fontn = 30 ;
-function createTextTexture(text, color = "black", fontSize = fontn, maxWidth = 240) {
+function createTextTexture(text, color = "white", fontSize = fontn, maxWidth = 240) {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
 
@@ -128,7 +128,7 @@ function createTextTexture(text, color = "black", fontSize = fontn, maxWidth = 2
 // Add text to Button 0
 
 const text0Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("منصة تيميز ", "black", fontn),
+    map: createTextTexture("منصة تيميز ", "white", fontn),
     transparent: true,
 });
 const text0Plane = new THREE.Mesh(
@@ -140,7 +140,7 @@ scene.add(text0Plane);
 
 // Add text to Button 1
 const text1Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("تنزيل البرنامج ", "black", fontn),
+    map: createTextTexture("تنزيل البرنامج ", "white", fontn),
     transparent: true,
 });
 const text1Plane = new THREE.Mesh(
@@ -152,7 +152,7 @@ scene.add(text1Plane);
 
 // Add text to Button 2
 const text2Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("واجهة التيميز ", "black", fontn),
+    map: createTextTexture("واجهة التيميز ", "white", fontn),
     transparent: true,
 });
 const text2Plane = new THREE.Mesh(
@@ -164,7 +164,7 @@ scene.add(text2Plane);
 
 // Add text to Button 3
 const text3Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("ضبط الإعدادات ", "black", fontn),
+    map: createTextTexture("ضبط الإعدادات ", "white", fontn),
     transparent: true,
 });
 const text3Plane = new THREE.Mesh(
@@ -176,7 +176,7 @@ scene.add(text3Plane);
 
 // Add text to Button 4
 const text4Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("أعدادات الأشعارات  ", "black", fontn),
+    map: createTextTexture("أعدادات الأشعارات  ", "white", fontn),
     transparent: true,
 });
 const text4Plane = new THREE.Mesh(
@@ -188,7 +188,7 @@ scene.add(text4Plane);
 
 // Add text to Button 5
 const text5Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("أعدادات الخصوصية ", "black", fontn),
+    map: createTextTexture("أعدادات الخصوصية ", "white", fontn),
     transparent: true,
 });
 const text5Plane = new THREE.Mesh(
@@ -200,7 +200,7 @@ scene.add(text5Plane);
 
 // Add text to Button 6
 const text6Material = new THREE.MeshBasicMaterial({
-    map: createTextTexture("أعدادات الأتصال ", "black", fontn),
+    map: createTextTexture("أعدادات الأتصال ", "white", fontn),
     transparent: true,
 });
 const text6Plane = new THREE.Mesh(
